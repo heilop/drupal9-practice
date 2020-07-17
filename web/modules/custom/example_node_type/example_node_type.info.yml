@@ -1,0 +1,6 @@
+name: Example Node Type
+type: module
+description: Basic module for Node Type
+package: Demo
+core: 8.x
+core_version_requirement: ^8 || ^9
