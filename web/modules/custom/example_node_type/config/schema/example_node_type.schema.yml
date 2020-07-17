@@ -1,0 +1,10 @@
+example_node_type:
+  type: config_object
+  label: 'Demos settings for Example node type module.'
+  mapping:
+    demo_label:
+      type: integer
+      label: 'A demo label'
+    demo_checkbox:
+      type: boolean
+      label: 'A demo checkbox'
