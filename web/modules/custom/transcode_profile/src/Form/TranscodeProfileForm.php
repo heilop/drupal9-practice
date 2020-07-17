@@ -50,6 +50,14 @@ class TranscodeProfileForm extends EntityForm {
       '#description' => $this->t('Description of the Transcode profile.'),
     ];
 
+    $form['codec'] = [
+      '#type' => 'textfield',
+      '#title' => $this->t('Codec'),
+      '#maxlength' => 255,
+      '#default_value' => $this->entity->getCodec(),
+      '#description' => $this->t('Video Codec to use.'),
+    ];
+
     return $form;
   }
 

@@ -42,7 +42,8 @@ use Drupal\transcode_profile\TranscodeProfileInterface;
  *   config_export = {
  *     "id",
  *     "label",
- *     "description"
+ *     "description",
+ *     "codec" = "codec"
  *   }
  * )
  */
@@ -75,5 +76,16 @@ class TranscodeProfile extends ConfigEntityBase implements TranscodeProfileInter
    * @var string
    */
   protected $description;
+
+  /**
+   * The Transcode profile coded.
+   *
+   * @var string
+   */
+  protected $codec;
+
+  public function getCodec() {
+    return $this->codec;
+  }
 
 }

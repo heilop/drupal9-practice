@@ -12,3 +12,6 @@ transcode_profile.transcode_profile.*:
       type: string
     description:
       type: string
+    codec:
+      type: label
+      label: 'Codec'
