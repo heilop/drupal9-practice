@@ -1,0 +1,10 @@
+langcode: en
+status: true
+dependencies: {  }
+name: 'Example Node Type'
+type: example_node_type
+description: 'Use <em>Example Node Type</em> content used for demo.'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false
