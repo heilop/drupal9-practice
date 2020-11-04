@@ -1,0 +1,6 @@
+name: Transcode Profile
+type: module
+description: Video Transcode Profile manager
+package: Demo
+core: 8.x
+core_version_requirement: ^8 || ^9

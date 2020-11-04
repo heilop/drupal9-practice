@@ -1,0 +1,39 @@
+transcode_profile.admin_settings_form:
+  path: '/admin/config/development/transcode-profile'
+  defaults:
+    _title: 'Transcode Profile settings'
+    _form: 'Drupal\transcode_profile\Form\AdminSettingsForm'
+  requirements:
+    _permission: 'administer transcode_profile configuration'
+
+entity.transcode_profile.collection:
+  path: '/admin/structure/transcode-profile'
+  defaults:
+    _entity_list: 'transcode_profile'
+    _title: 'Transcode Profile configuration'
+  requirements:
+    _permission: 'administer transcode_profile'
+
+entity.transcode_profile.add_form:
+  path: '/admin/structure/transcode_profile/add'
+  defaults:
+    _entity_form: 'transcode_profile.add'
+    _title: 'Add a transcode profile'
+  requirements:
+    _permission: 'administer transcode_profile'
+
+entity.transcode_profile.edit_form:
+  path: '/admin/structure/transcode-profile/{transcode_profile}'
+  defaults:
+    _entity_form: 'transcode_profile.edit'
+    _title: 'Edit a transcode profile'
+  requirements:
+    _permission: 'administer transcode_profile'
+
+entity.transcode_profile.delete_form:
+  path: '/admin/structure/transcode-profile/{transcode_profile}/delete'
+  defaults:
+    _entity_form: 'transcode_profile.delete'
+    _title: 'Delete a transcode profile'
+  requirements:
+    _permission: 'administer transcode_profile'
