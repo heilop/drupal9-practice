@@ -1,5 +1,26 @@
 name: drupal9-practice
 recipe: drupal9
 config:
+  drupal: true
   webroot: web
   php: '7.4'
+  xdebug: off
+  config:
+    php: .lando/php.ini
+services:
+  appserver:
+    overrides:
+      environment:
+        XDEBUG_MODE:
+        # Support debugging Drush with XDEBUG.
+        PHP_IDE_CONFIG: "serverName=drupal9-practice.lndo.site"
+tooling:
+  xdebug:
+    description: Loads Xdebug in the selected mode.
+    cmd:
+      - appserver: /app/.lando/xdebug.sh
+    user: root
+  drupal:
+    decription: Run drupal console command.
+    cmd:
+      - appserver: drupal
