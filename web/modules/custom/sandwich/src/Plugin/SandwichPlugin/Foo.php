@@ -15,4 +15,8 @@ use Drupal\sandwich\Plugin\SandwichPluginPluginBase;
  */
 class Foo extends SandwichPluginPluginBase {
 
+  public function order(array $extras) {
+    // TODO: Implement order() method.
+  }
+
 }
